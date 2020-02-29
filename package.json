@@ -1,0 +1,24 @@
+{
+  "name": "apl_run",
+  "version": "0.0.1",
+  "description": "GraphQL Apollo Server",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && node lib/index.js",
+    "start": "node lib/index.js",
+    "deploy": "npm run build && gcloud app deploy"
+  },
+  "devDependencies": {
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "apollo-server": "^2.10.1",
+    "firebase-admin": "^8.9.2",
+    "graphql": "^14.6.0",
+    "graphql-tag": "^2.10.3"
+  },
+  "author": "DevFrost Exp",
+  "license": "ISC"
+}
